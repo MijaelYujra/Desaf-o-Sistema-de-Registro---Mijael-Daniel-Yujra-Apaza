@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM sans', sans-serif;
+}
+
+body {
+    background-image: url(../img/Fondo.jpg);
+    background-size: cover;
+} 
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-form {
+    position: relative;
+    background-color: white; 
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form-header {
+    position: relative;
+}
+
+.form-header p {
+    color: grey;
+}
+
+.form-header h1 {
+    color: rgb(14, 14, 107);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.grupo-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field {
+    height: 48px;
+    padding-inline: 14px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+
+.boton-formulario {
+    height: 50px;
+    color: white;
+    background-color: rgb(14, 14, 107);
+    border: 0px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.boton-formulario:hover {
+    background-color: rgb(21, 41, 128);
+    transition: 0.5s;
+    box-shadow: 0 0 10px, rgba(21, 41, 107,0.5);
+}
+
+.input-checkbox {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+}
+
+.borrar-datos {
+    cursor: pointer;
+}

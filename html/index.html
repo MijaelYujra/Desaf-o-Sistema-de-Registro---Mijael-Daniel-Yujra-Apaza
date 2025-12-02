@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío | Inicio de Sesión</title>
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contenedor-form">
+            <div class="form-header">
+                <p>Introduzca sus datos por favor</p>
+                <h1>Inicio de Sesión</h1>
+            </div>
+            <form class="formulario">
+                <div class="grupo-input">
+                    <div class="show" id="show"></div>
+                    <input type="email" id="log-email" placeholder="Email" class="input-field">
+                    <input type="password" id="log-password" placeholder="Contraseña"  class="input-field">
+                    <div class="footer">
+                        <label><input type="checkbox" class="input-checkbox" onclick="togglePassword('log-password')">Mostrar contraseña</label>
+                        <a href="recuperacion.html" id="link-recuperacion">Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </form>
+            <button onclick="Ingresar()" class="boton-formulario" id="boton_formulario">Ingresar</button>
+            <div class="links">
+                <p>No tienes una cuenta? </p>
+                <a href="registro.html" class="crear-cuenta">Crear una cuenta</a>
+            </div>
+        </div>
+    </div>
+    <button onclick="borrarDatos()" class="borrar-datos">Borrar Datos</button>
+    <script src="..\js\script.js"></script>
+    <script src="-..\js\login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío | Registro</title>
+    <link rel="stylesheet" href="..\css\style.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="contenedor-form">
+            <div class="form-header">
+                <p>Llene los espacios para crear su cuenta</p>
+                <h1>Bienvenido!</h1>
+            </div>
+            <form class="formulario">
+                <div class="grupo-input">
+                    <input type="text" id="reg-nombre" class="input-field" placeholder="Nombre" required>
+                    <input type="email" id="reg-email" class="input-field" placeholder="Email" required>
+                    <input type="text" id="reg-numero" class="input-field" placeholder="Número de teléfono" required>
+                    <input type="password" id="reg-password" class="input-field" placeholder="Contraseña" required>
+                    <label><input type="checkbox" class="input-checkbox" onclick="togglePassword('reg-password')">Mostrar Contraseña</label>
+                </div>
+            </form>
+            <button onclick="Registrar()" class="boton-formulario">Registrar</button>
+            <div class="links">
+                <a href="index.html" class="volver-login">Volver a Inicio de Sesión</a>
+            </div>
+        </div>
+    </div>
+    <script src="..\js\script.js"></script>
+</body>
+
+</html>
